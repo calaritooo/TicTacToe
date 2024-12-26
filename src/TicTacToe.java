@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.String;
 
-public class Main {
+public class TicTacToe {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Tic-Tac-Toe!");
@@ -105,7 +105,6 @@ public class Main {
     }
 
     public static int[] getValidInput(Scanner scanner) {
-        int input = -1;
         while (true) {
             String line = scanner.nextLine().trim();
             String[] numbers = line.split("[^0-9]+");
